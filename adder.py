@@ -10,5 +10,5 @@ class MyHandler(BaseHTTPServer.BaseHTTPRequestHandler):
     s.wfile.write("The path was %s" % s.path)
 
 
-httpd = BaseHTTPServer.HTTPServer(("0.0.0.0", 8080), MyHandler)
+httpd = BaseHTTPServer.HTTPServer(("0.0.0.0", 4000), MyHandler)
 httpd.serve_forever()
